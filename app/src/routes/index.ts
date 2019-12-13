@@ -4,7 +4,7 @@ export const createRoutes: CreateRouteFunction = (resolve) => {
   return [
     {
       path: '/',
-      component: resolve('@/views/Example.vue'),
+      component: resolve('@/views/example/Index.vue'),
     },
   ]
 }

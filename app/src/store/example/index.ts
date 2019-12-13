@@ -1,6 +1,6 @@
 import { Module } from 'vuex'
 
-export const createStoreMoudle = <R>(rootState: R): Module<State, R> => {
+export const createStoreModule = <R>(rootState: R): Module<State, R> => {
   return {
     namespaced: true,
     state() {
