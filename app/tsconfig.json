@@ -19,7 +19,6 @@
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
-      "@modules/*": ["./modules/*"],
       "~/*": ["./src/*"],
       "@/*": ["./src/*"]
     },
