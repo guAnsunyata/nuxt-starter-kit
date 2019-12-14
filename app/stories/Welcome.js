@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-console
-const log = () => console.log('Welcome to storybook!');
+const log = () => console.log('Welcome to storybook!')
 
 export default {
   name: 'welcome',
@@ -16,7 +16,8 @@ export default {
       main: {
         padding: 15,
         lineHeight: 1.4,
-        fontFamily: '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif',
+        fontFamily:
+          '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif',
         backgroundColor: '#ffffff',
       },
 
@@ -44,7 +45,7 @@ export default {
       note: {
         opacity: 0.5,
       },
-    };
+    }
   },
 
   template: `
@@ -114,8 +115,8 @@ export default {
 
   methods: {
     onClick(event) {
-      event.preventDefault();
-      this.showApp();
+      event.preventDefault()
+      this.showApp()
     },
   },
-};
+}

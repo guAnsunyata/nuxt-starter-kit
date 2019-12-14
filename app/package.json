@@ -1,7 +1,7 @@
 {
   "name": "nuxt-starter-kit",
   "version": "1.0.0",
-  "description": "A example project with minimum pratical feature for nuxt",
+  "description": "An example project with minimum practical features for nuxt",
   "author": "guansunyata",
   "private": true,
   "scripts": {
@@ -9,13 +9,14 @@
     "build": "nuxt-ts build",
     "generate": "nuxt-ts generate",
     "start": "nuxt-ts start",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .ts,.js,.vue ./src",
+    "lint-fix": "eslint --ext .ts,.js,.vue ./src --fix",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint"
+    "*.{ts,js,vue}": "eslint"
   },
   "husky": {
     "hooks": {
@@ -33,6 +34,7 @@
     "@babel/core": "^7.7.5",
     "@nuxt/typescript-build": "^0.5.1",
     "@nuxtjs/eslint-config": "^1.0.1",
+    "@nuxtjs/eslint-config-typescript": "^1.0.0",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/stylelint-module": "^3.1.0",
     "@storybook/addon-actions": "^5.2.8",

@@ -24,11 +24,13 @@ const ClassicStore: Module<Options> = function(options) {
     src: path.resolve(__dirname, './plugin.js'),
     fileName: 'store.js',
     options: {
+      /* eslint-disable */
       resolvedPath: resolvedPath
         ? path
             .relative(this.options.buildDir!, resolvedPath)
             .replace(/\/+|\\+/g, '/')
         : undefined,
+      /* eslint-enable */
       functionName: _options.functionName,
     },
   })

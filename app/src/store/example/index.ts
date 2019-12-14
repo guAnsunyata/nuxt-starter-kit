@@ -1,5 +1,6 @@
 import { Module } from 'vuex'
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 export const createStoreModule = <R>(rootState: R): Module<State, R> => {
   return {
     namespaced: true,

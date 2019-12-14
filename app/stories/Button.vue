@@ -1,5 +1,5 @@
 <template functional>
-  <button :class="{ 'rounded': props.rounded }">
+  <button :class="{ rounded: props.rounded }">
     <slot />
   </button>
 </template>
@@ -9,7 +9,6 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
-
 button {
   padding: 7px 15px;
   background-color: #f6798e;
