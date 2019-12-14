@@ -5,6 +5,9 @@ export const createRoutes: CreateRouteFunction = (resolve) => {
     {
       path: '/',
       component: resolve('@/views/example/Index.vue'),
+      meta: {
+        requiredStoreModules: ['example'],
+      },
     },
   ]
 }

@@ -31,7 +31,7 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/register-store'],
+  plugins: ['@/plugins/register-store', '@/plugins/sync-page-module-register-middleware'],
   /*
    ** Nuxt.js dev-modules
    */
@@ -59,6 +59,9 @@ export default {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  router: {
+    middleware: 'index',
+  },
   /*
    ** Build configuration
    */
