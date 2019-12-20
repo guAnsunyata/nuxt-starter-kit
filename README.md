@@ -4,8 +4,6 @@
 
 ## Features
 
-### Features
-
 #### Fully customized router configuration
 remove nuxt opinionated route-page mapping configurations.<br>
 see implementation [flexible-routes](https://github.com/guAnsunyata/nuxt-starter-kit/tree/master/src/modules/flexible-routes)
@@ -48,7 +46,7 @@ export const createRoutes: CreateRouteFunction = (resolve) => {
 - Pre-commit / Husky
 - PWA (WIP: customized cache strategy
 
-## Build Setup
+### Build Setup
 
 ``` bash
 # install dependencies
@@ -61,4 +59,54 @@ $ npm run dev
 $ npm run build
 $ npm run start
 
+```
+
+### VS Code Setting (ESLint + Prettier)
+We configurate rules in `eslintrc.js` including Prettier rules.
+Since VS Code 1.41.0 we can use only ESLint extension to fulfill all Prettier extension in VS code.
+
+#### Extensions
+- [VS Code ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier Formatter for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) (for code formatting excluding .js, .ts, and .vue)
+
+#### Update VSCode setting
+- Enable ESLint for formatting
+`setting.json`
+```
+"eslint.format.enable": true
+```
+
+- Disable Prettier for js related files
+`setting.json`
+```
+"prettier.disableLanguages": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+],
+```
+
+- Set ESLint as default 
+`cmd + shift + P` search `Format Docuement With` and select `Configure Default Formatter`.
+<br>Now you can use `shift + alt + f` to format code anytime you want without saving file. 
+
+- Configure lint rules only in one place (eslintrc.js). 
+For prettier rules:
+`eslintrc.js`
+```
+// for prettier rules
+rules: {
+  "prettier/prettier": [
+    "error",
+    {
+      "semi": false,
+      "tabWidth": 2,
+      "arrowParens": "always",
+      "singleQuote": true,
+      "trailingComma": "es5",
+      "htmlWhitespaceSensitivity": "ignore"
+    }
+  ],
+  // ...
+}
 ```
