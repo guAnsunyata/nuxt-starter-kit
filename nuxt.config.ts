@@ -31,7 +31,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/register-store', '@/plugins/sync-page-module-register-middleware'],
+  plugins: [
+    '@/plugins/register-store',
+    '@/plugins/sync-page-module-register-middleware',
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -52,7 +55,7 @@ export default {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv',
+    ['@nuxtjs/dotenv', { path: './' }],
   ],
   /*
    ** Axios module configuration
