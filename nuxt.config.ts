@@ -69,14 +69,14 @@ export default {
    ** Build configuration
    */
   build: {
-    typescript: {
-      typeCheck: {
-        eslint: true,
-      },
-    },
     /*
      ** You can extend webpack config here
      */
     // extend(config, ctx) {},
+  },
+  typescript: {
+    typeCheck: {
+      eslint: true,
+    },
   },
 }
