@@ -6,18 +6,18 @@
 
 #### Fully customized router configuration
 remove nuxt opinionated route-page mapping configurations.<br>
-see implementation [flexible-routes](https://github.com/guAnsunyata/nuxt-starter-kit/tree/master/src/modules/flexible-routes)
+see implementation [flexible-routes](https://github.com/guAnsunyata/nuxt-starter-kit/tree/master/src/nuxt-modules/flexible-routes)
 
 #### Fully customized vuex store configuration
 using vuex in classic mode without deprecating warnings.<br>
-see implementation [classic-store](https://github.com/guAnsunyata/nuxt-starter-kit/tree/master/src/modules/classic-store)
+see implementation [classic-store](https://github.com/guAnsunyata/nuxt-starter-kit/tree/master/src/nuxt-modules/classic-store)
 
 #### Dynamic vuex module registering
 keep large scale app loading module smartly on demand.
 
 ```typescript
 // `route.ts`
-import { CreateRouteFunction } from '@/modules/flexible-routes/module'
+import { CreateRouteFunction } from '@/nuxt-modules/flexible-routes/module'
 
 export const createRoutes: CreateRouteFunction = (resolve) => {
   return [
@@ -86,11 +86,11 @@ Since VS Code 1.41.0 we can use only ESLint extension to fulfill all Prettier ex
 ],
 ```
 
-- Set ESLint as default 
+- Set ESLint as default
 `cmd + shift + P` search `Format Docuement With` and select `Configure Default Formatter`.
-<br>Now you can use `shift + alt + f` to format code anytime you want without saving file. 
+<br>Now you can use `shift + alt + f` to format code anytime you want without saving file.
 
-- Configure lint rules only in one place (eslintrc.js). 
+- Configure lint rules only in one place (eslintrc.js).
 For prettier rules:
 `eslintrc.js`
 ```

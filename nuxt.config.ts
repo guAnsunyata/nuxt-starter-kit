@@ -44,8 +44,8 @@ export default {
     // Doc: https://github.com/nuxt-community/stylelint-module
     '@nuxtjs/stylelint-module',
     '@nuxt/typescript-build',
-    '@/modules/flexible-routes/module',
-    '@/modules/classic-store/module',
+    '@/nuxt-modules/flexible-routes/module',
+    '@/nuxt-modules/classic-store/module',
   ],
   /*
    ** Nuxt.js modules
