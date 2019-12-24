@@ -7,7 +7,7 @@ import path from 'path'
 import { Module } from '@nuxt/types'
 import { NuxtRouteConfig } from '@nuxt/types/config/router'
 
-const FlexableRoutes: Module<Options> = function(options) {
+const FlexibleRoutes: Module<Options> = function(options) {
   const _options = Object.assign(
     {},
     {
@@ -90,7 +90,7 @@ const FlexableRoutes: Module<Options> = function(options) {
 // node_modules/@nuxt/types/config/router.d.ts
 export type NuxtRouteResolve = (...pathSegments: string[]) => any
 export type CreateRouteFunction = (
-  resovle: NuxtRouteResolve
+  resolve: NuxtRouteResolve
 ) => NuxtRouteConfig[]
 
 export interface Options {
@@ -99,4 +99,4 @@ export interface Options {
   modifyMode: 'REPLACE' | 'APPEND'
 }
 
-export default FlexableRoutes
+export default FlexibleRoutes
