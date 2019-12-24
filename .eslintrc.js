@@ -34,5 +34,16 @@ module.exports = {
         objects: 'always-multiline',
       },
     ],
+    'prettier/prettier': [
+      'error',
+      {
+        semi: false,
+        tabWidth: 2,
+        arrowParens: 'always',
+        singleQuote: true,
+        trailingComma: 'es5',
+        htmlWhitespaceSensitivity: 'ignore'
+      }
+    ]
   },
 }
