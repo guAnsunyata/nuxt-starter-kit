@@ -1,4 +1,4 @@
-import { CreateRouteFunction } from '@/modules/flexible-routes/module'
+import { CreateRouteFunction } from '@/nuxt-modules/flexible-routes/module'
 
 export const createRoutes: CreateRouteFunction = (resolve) => {
   return [
