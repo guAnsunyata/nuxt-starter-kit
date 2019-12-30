@@ -44,6 +44,7 @@ module.exports = {
         trailingComma: 'es5',
         htmlWhitespaceSensitivity: 'ignore'
       }
-    ]
+    ],
+    '@typescript-eslint/member-ordering': 'error'
   },
 }
