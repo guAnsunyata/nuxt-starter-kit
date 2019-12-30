@@ -19,6 +19,6 @@ module.exports = {
         ignore: ['after-comment'],
       },
     ],
-    'unit-whitelist': ['em', 'rem', '%', 's', 'px', 'vw', 'vh'],
+    'unit-whitelist': ['em', 'rem', '%', 's', 'px', 'vw', 'vh', 'deg'],
   },
 }
